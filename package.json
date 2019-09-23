@@ -1,6 +1,6 @@
 {
   "name": "MIDI-over-WebSocket",
-  "description":"",
+  "description": "WebSocket client/server for MIDI messages",
   "homepage": "https://github.com/jambonbill/nodeMIDI",
   "version": "0.0.1",
   "dependencies": {
