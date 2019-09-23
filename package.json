@@ -3,6 +3,11 @@
   "description": "WebSocket client/server for MIDI messages",
   "homepage": "https://github.com/jambonbill/nodeMIDI",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jambonbill/nodeMIDI"
+  },
   "dependencies": {
     "websocket": "latest",
     "midi": "latest"
