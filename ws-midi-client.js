@@ -1,22 +1,18 @@
 'use strict';
 
-// dependencies
 const midi = require('midi');
-//const webSocketServer = require('websocket').server;
 const WebSocketClient = require('websocket').client;
-const fs = require('fs');
 var config = require('./config');
-console.log(config);
-
+//console.log(config);
 const output = new midi.Output();// Set up a new output.
-// Create a virtual input port.
-let portName="WebSocket Client";
+let portName=config.host+':'+config.port;
 console.log("Open virtual MIDI port: "+portName);
 output.openVirtualPort(portName);
 
 var client = new WebSocketClient();
 client.on('connectFailed', function(error) {
-    console.log('Connect Error: ' + error.toString());
+    console.error(error.toString());
+    output.closePort();
 });
 
 client.on('connect', function(connection) {
@@ -28,7 +24,7 @@ client.on('connect', function(connection) {
     });
 
     connection.on('close', function() {
-        console.log('echo-protocol Connection Closed');
+        console.log('Connection Closed');
         // Close the MIDI port when done.
         output.closePort();
     });
