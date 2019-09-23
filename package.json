@@ -1,0 +1,13 @@
+{
+  "name": "MIDI-over-WebSocket",
+  "description":"",
+  "homepage": "https://github.com/jambonbill/nodeMIDI",
+  "version": "0.0.1",
+  "dependencies": {
+    "websocket": "latest",
+    "midi": "latest"
+  },
+  "scripts": {
+    "start": "nodemon ws-midi-server.js"
+  }
+}
