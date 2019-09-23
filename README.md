@@ -1,6 +1,8 @@
 # nodeMIDI
 MIDI over WebSocket for the whole family
 
+# Dont forget
+sudo apt-get install libasound2-dev
 
 #usage
 
