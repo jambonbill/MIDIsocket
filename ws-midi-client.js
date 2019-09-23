@@ -39,7 +39,10 @@ client.on('connect', function(connection) {
 
         //console.log(typeof message, message, message.binaryData.length);
         //console.log(typeof message);
-        if (message.binaryData.length==3) {
+        if (message.binaryData.length==1) {//MTC
+            var msg = [];
+            console.log('todo');
+        }else if (message.binaryData.length==3) {//
             var msg = [];
             let b0=message.binaryData[0];
             let b1=message.binaryData[1];
@@ -47,7 +50,7 @@ client.on('connect', function(connection) {
             let chan=b0 & 0x0f;
             var type=b0 & 0xf0;
             switch(type){
-                case 0xc0:msg=[b0,b1];break;//'Program change'
+                case 0xc0:msg=[b0,b1];break;//¯\_(ツ)_/¯ bugfix 'Program change'
                 default:
                     msg=[b0,b1,b2];break;
             }
