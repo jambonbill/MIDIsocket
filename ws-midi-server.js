@@ -1,6 +1,8 @@
 'use strict';
 
-var serverPort = 9867;//
+// Create a virtual MIDI input,
+// on which you can send your events,
+// that will be forwarded over webSocket to connected clients
 
 // dependencies
 const os = require('os');
@@ -8,7 +10,8 @@ const ifaces = os.networkInterfaces();
 const midi = require('midi');
 const webSocketServer = require('websocket').server;
 const http = require('http');
-
+var config = require('./config');
+var serverPort=config.port;
 
 //Get local ip address(es)
 Object.keys(ifaces).forEach(function (ifname) {
