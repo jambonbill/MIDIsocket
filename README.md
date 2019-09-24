@@ -1,12 +1,10 @@
-# nodeMIDI
+# MIDIsocket
 
-MIDI over WebSocket for the whole family
+MIDI over WebSocket for the whole family \o/
 
-Allow to create virtual MIDI connections on your local network.
+Create virtual MIDI connections on your local network.
 
-Note that it can also work on the internet, but you probably dont want that, unless you dont mind latency.
-
-## Instalation
+## Installation
 
  - clone or download the repo
  - npm install
@@ -25,7 +23,7 @@ You must install libasound2-dev before npm install
 
 ## Dependencies
 
-Node js obviously
+Node.js obviously
 
 ## License
 
