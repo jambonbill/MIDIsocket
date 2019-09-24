@@ -29,4 +29,4 @@ Node.js obviously
 
 This project is in the public domain.
 
-For more information, see [license](LICENSE.md).
+For more information, see [license](LICENSE).
