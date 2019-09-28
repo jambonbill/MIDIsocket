@@ -23,7 +23,7 @@ You must install libasound2-dev before npm install
 
 ## Dependencies
 
-Node.js obviously
+node.js
 
 ## License
 
