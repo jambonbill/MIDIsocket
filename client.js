@@ -5,6 +5,9 @@ const WebSocketClient = require('websocket').client;
 var config = require('./config');
 //console.log(config);
 const output = new midi.Output();// Set up a new output.
+
+process.title="MIDIsocket client";
+
 let portName=config.host+':'+config.port;
 console.log("Open virtual MIDI port: "+portName);
 output.openVirtualPort(portName);
