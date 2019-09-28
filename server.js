@@ -13,6 +13,8 @@ const http = require('http');
 var config = require('./config');
 var serverPort=config.port;
 
+process.title="MIDIsocket server";
+
 //Get local ip address(es)
 Object.keys(ifaces).forEach(function (ifname) {
   var alias = 0;
