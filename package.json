@@ -13,6 +13,6 @@
     "midi": "latest"
   },
   "scripts": {
-    "start": "nodemon ws-midi-server.js"
+    "start": "nodemon server.js"
   }
 }
