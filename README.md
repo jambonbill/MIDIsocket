@@ -6,9 +6,9 @@ Create virtual MIDI connections on your local network.
 
 ## Installation
 
- - clone or download the repo
- - npm install
- - edit config.js
+ 1. clone or download the repo
+ 2. npm install
+ 3. edit config.js
 
 ## Usage
 
