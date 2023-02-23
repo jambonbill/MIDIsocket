@@ -4,6 +4,8 @@ MIDI over WebSocket for the whole family \o/
 
 Create virtual MIDI connections on your local network.
 
+![MIDI Logo](MIDI_LOGO.svg)
+
 ## Installation
 
  1. clone or download the repo
