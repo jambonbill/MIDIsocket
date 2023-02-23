@@ -19,7 +19,7 @@ Create virtual MIDI connections on your local network.
 
 You must install libasound2-dev before npm install
 
- - sudo apt-get install libasound2-dev
+`sudo apt-get install libasound2-dev`
 
 ## Dependencies
 
